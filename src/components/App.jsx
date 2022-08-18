@@ -25,8 +25,8 @@ const [filter, setFilter] = useState('');
 
   const addContacts = (name, number) => {
     const contact = {
-      name: '',
-      number: '',
+      name,
+      number,
       id: nanoid(),
     };
     contacts.find(
