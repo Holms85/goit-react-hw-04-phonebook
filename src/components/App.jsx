@@ -23,7 +23,7 @@ const [filter, setFilter] = useState('');
     localStorage.setItem('contacts', JSON.stringify(contacts))
   }, [contacts]);
 
-  const addContacts = (name, number) => {
+  const addContacts = ({ name, number }) => {
     const contact = {
       name,
       number,
@@ -56,7 +56,7 @@ const [filter, setFilter] = useState('');
         <ContactForm onSubmit={addContacts} />
         <h3 className={style.title}>Contacts</h3>
         <Filter filter={filter} onChange={changeFilter} />
-          <ContactList contacts={getVisibleContact}
+          <ContactList contacts={getVisibleContact()}
           onDeleteContact={deleteContact}/>
       </div>
     );

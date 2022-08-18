@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import ContactItem from 'components/ContactItem/ContactItem';
 
 const ContactList = ({ contacts, onDeleteContact }) => {
+  console.log(contacts);
   return (
     <ul>
       {
