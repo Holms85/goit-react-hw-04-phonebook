@@ -1,0 +1,18 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+
+.input {
+    margin-bottom: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: rgb(100, 79, 79);
+    width: 250px;
+}
+
+.label {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
