@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import style from './ContactItem.module.css';
-// import ContactList from 'components/ContactList/ContactList';
 
 function ContactItem({ id, name, number, onDeleteContact }) {
   return (
